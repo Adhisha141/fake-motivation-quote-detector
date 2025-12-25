@@ -1,21 +1,41 @@
 # Fake Motivation Quote Detector
 
-This project uses Machine Learning to detect whether a motivational quote is **real** or **fake / generic**.
+This project is a simple Machine Learning application that classifies motivational quotes as **real** or **fake / generic** using Natural Language Processing (NLP).
 
 ## Problem Statement
-Motivational quotes are everywhere, but many of them are repetitive, low-quality, or AI-generated.
-This project aims to classify quotes as real or fake using Natural Language Processing (NLP).
+Motivational quotes are widely shared online, but many of them are repetitive, low-quality, or AI-generated.
+The goal of this project is to automatically detect such fake or generic quotes using machine learning.
+
+## Dataset
+The dataset contains motivational quotes labeled as:
+- real
+- fake
+
+The data is manually curated for learning purposes and stored in CSV format.
 
 ## Approach
 - Text preprocessing
 - TF-IDF vectorization
 - Logistic Regression classifier
+- Train-test split for evaluation
 
-## Tech Stack
-- Python
-- scikit-learn
-- pandas
-- numpy
+## Project Structure
+fake-motivation-quote-detector/
+├── README.md
+├── train_model.py
+└── data/
+    ├── README.md
+    └── quotes.csv
 
-## Status
-Project setup completed. Model training in progress.
+## Results
+The model is trained using Logistic Regression and evaluated using accuracy score.
+
+## Future Improvements
+- Increase dataset size
+- Try advanced NLP models
+- Add a web interface for predictions
+
+## Author
+Adhisha
+
+
